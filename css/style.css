@@ -7,6 +7,9 @@ body, html {
 	width: 100% !important;
 	height: 100% !important;
 }
+
+img-responsive { max-width: 100% !important; }  
+
 h2 {
 	font-family: 'Montserrat', sans-serif;
 	margin: 0 0 20px 0;
@@ -63,6 +66,7 @@ p {
 p.intro {
 	margin: 12px 0 0;
 	line-height: 24px;
+    max-width: 100%;
 }
 
 p.info {
@@ -219,7 +223,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     display: table;
     width: 100%;
     padding: 0;
-    background: url(../images/christmas-banner1.png) center center no-repeat;
+    background: url(../images/banner1.png) center center no-repeat;
     background-color: #e5e5e5;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -279,7 +283,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../images/wood/banner2.png) center center no-repeat;
+	background: url(../images/wood/banner-min.png) center center no-repeat;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -794,4 +798,22 @@ color: #777;
 .corner-ribbon.blue {background: #337ab7;}
 .corner-ribbon.lightblue {background: #5bc0de;}
 .corner-ribbon.orange {background: #f0ad4e;}
+}
+
+
+.intro .overlay {
+	background: rgba(0,0,0,0.3);
+}
+
+.img-responsive-logo {
+    .img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  /*display: block;*/
+  max-width: 100%;
+  /*height: auto;*/
+    padding-bottom: 10px;
+}
 }
